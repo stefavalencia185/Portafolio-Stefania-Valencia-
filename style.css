@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Playfair+Display:wght@500&display=swap');
+
+:root {
+  --rosa-pastel: #f8d7e5;
+  --rosa-suave: #fce4ec;
+  --rosado: #f48fb1;
+  --rosado-oscuro: #d81b60;
+  --texto: #4a4a4a;
+  --blanco: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: var(--rosa-suave);
+  color: var(--texto);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* 🌸 Barra de navegación */
+.navbar {
+  background-color: var(--rosa-pastel);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--rosado-oscuro);
+  font-weight: 600;
+  background-color: var(--blanco);
+  padding: 0.5rem 1rem;
+  border-radius: 0.8rem;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: var(--rosado);
+  color: var(--blanco);
+}
+
+.navbar a:active {
+  background-color: var(--rosado-oscuro);
+  color: var(--blanco);
+}
+
+/* Encabezado */
+header {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: var(--rosado-oscuro);
+  margin: 0;
+}
+
+/* Intro */
+.intro {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+/* Secciones */
+.contenedor-secciones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* Artículos */
+article {
+  background-color: var(--blanco);
+  border-radius: 1rem;
+  border: 2px inset var(--rosado);
+  padding: 1.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 900px;
+  transition: transform 0.3s ease;
+}
+
+article:hover {
+  transform: translateY(-5px);
+}
+
+/* Acerca de mí */
+.acerca-contenido {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.acerca-contenido img {
+  width: 250px;
+  border-radius: 1rem;
+}
+
+.texto-acerca {
+  flex: 1;
+}
+
+/* Temas de interés y proyectos centrados */
+.temas-interes, .mis-proyectos {
+  text-align: center;
+}
+
+/* Galería de proyectos */
+.galeria-proyectos {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.proyecto {
+  background-color: var(--rosa-pastel);
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 150px;
+  text-align: center;
+  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background-color: var(--rosa-pastel);
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  border-top: 0.2rem solid var(--rosado);
+}
+
+a[target='_blank'] {
+  display: block;
+  text-align: center;
+  margin: 2rem auto;
+  padding: 0.8rem 1.2rem;
+  background-color: var(--rosado);
+  color: white;
+  border-radius: 0.5rem;
+  width: fit-content;
+  font-size: 1rem;
+}
+
+a[target='_blank']:hover {
+  background-color: var(--rosado-oscuro);
+}
+
+
