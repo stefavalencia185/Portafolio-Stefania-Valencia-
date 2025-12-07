@@ -102,7 +102,7 @@ h1, h2, h3{
 }
 
 .about-img{
-  width:260px;
+  width:100%;
   border-radius:var(--radius);
 }
 
