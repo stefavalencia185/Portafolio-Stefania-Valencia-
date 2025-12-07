@@ -43,12 +43,5 @@ function escapeHtml(text) {
   return text.replace(/[&<>"']/g, (m) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 }
 
-// --- MENÚ HAMBURGUESA ---
-document.addEventListener("DOMContentLoaded", () => {
-  const toggle = document.querySelector(".menu-toggle");
-  const navList = document.querySelector(".nav-list");
 
-  toggle.addEventListener("click", () => {
-    navList.classList.toggle("active");
-  });
-});
+// this is just a test
