@@ -1,73 +1,140 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mi portafolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portafolio — Stefania Valencia</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Barra de navegación -->
-  <nav class="navbar">
-    <ul>
-      <li><a href="#acerca">Acerca de mí</a></li>
-      <li><a href="#interes">Temas de interés</a></li>
-      <li><a href="#proyectos">Mis proyectos</a></li>
-    </ul>
+
+  <!-- NAV -->
+  <nav class="navbar" aria-label="Menú principal">
+    <div class="container">
+      <a class="brand" href="#titulo">Stefania V.</a>
+      <ul class="nav-list" role="menubar" aria-label="Navegación principal">
+        <li role="none"><a role="menuitem" href="#acerca">Acerca de mí</a></li>
+        <li role="none"><a role="menuitem" href="#interes">Temas</a></li>
+        <li role="none"><a role="menuitem" href="#proyectos">Proyectos</a></li>
+        <li role="none"><a role="menuitem" href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
   </nav>
 
-  <!-- Encabezado -->
-  <header>
+  <!-- HEADER -->
+  <header class="site-header" role="banner">
     <h1 id="titulo">Stefania Valencia Valencia</h1>
+    <p class="subtitulo">Estudiante ADSO — Diseño Industrial</p>
   </header>
-  <section class="contenedor-secciones">
-    <!-- Sección Acerca de mí -->
-    <article class="acerca-de-mi" id="acerca">
-      <div class="acerca-contenido">
-        <img src="mifoto.jpeg" alt="Foto de Stefania" />
-        <div class="texto-acerca">
-          <h2>Acerca de mí</h2>
-          <p>Mi nombre es <strong>Stefania Valencia Valencia</strong>, tengo 17 años.</p>
-          <p>Soy estudiante del SENA y del ITM. Actualmente estudio Análisis y Desarrollo de Software y también Ingeniería en Diseño Industrial.</p>
+
+  <main>
+    <!-- ACERCA DE MI -->
+    <section id="acerca" class="section" aria-labelledby="about-heading">
+      <div class="about-box container" role="region" aria-labelledby="about-heading">
+        <img src="mifoto.jpeg" class="about-img" alt="Foto de Stefania" />
+
+        <div class="about-text">
+          <h2 id="about-heading">Acerca de mí</h2>
+          <p><strong>Stefania Valencia Valencia, 17 años.</strong></p>
+          <p>Estudiante del SENA e ITM. Me interesa el diseño sostenible, la inclusión, la simulación y el modelado.</p>
         </div>
       </div>
-    </article>
+    </section>
 
-    <!-- Sección Temas de interés -->
-    <article class="temas-interes" id="interes">
-      <h2>Temas de interés</h2>
-      <p>Hay muchos temas interesantes en el mundo del diseño y la programación.</p>
-      <p>Este texto es de prueba.</p>
-    </article>
+    <div class="divider" role="separator" aria-hidden="true"></div>
 
-    <!-- Sección Mis proyectos -->
-    <article class="mis-proyectos" id="proyectos">
-      <h2>Mis proyectos</h2>
-      <p>Algunos de mis trabajos son:</p>
-      <div class="galeria-proyectos">
-        <div class="proyecto">Proyecto 1</div>
-        <div class="proyecto">Proyecto 2</div>
-        <div class="proyecto">Proyecto 3</div>
+    <!-- TEMAS -->
+    <section id="interes" class="section" aria-labelledby="temas-heading">
+      <h2 id="temas-heading" class="section-title">Temas de interés</h2>
+
+      <div class="grid-temas container" role="list">
+        <article class="card" role="listitem" aria-labelledby="t1">
+          <h3 id="t1">Diseño sostenible</h3>
+          <p>Creación de soluciones con bajo impacto ambiental.</p>
+        </article>
+
+        <article class="card" role="listitem" aria-labelledby="t2">
+          <h3 id="t2">Inclusión</h3>
+          <p>Diseñar productos y experiencias accesibles para todos.</p>
+        </article>
+
+        <article class="card" role="listitem" aria-labelledby="t3">
+          <h3 id="t3">Solución de problemas</h3>
+          <p>Analizar necesidades reales y proponer soluciones funcionales.</p>
+        </article>
+
+        <article class="card" role="listitem" aria-labelledby="t4">
+          <h3 id="t4">Simulación y análisis</h3>
+          <p>Evaluar diseños antes de fabricarlos.</p>
+        </article>
+
+        <article class="card" role="listitem" aria-labelledby="t5">
+          <h3 id="t5">Modelado y prototipado</h3>
+          <p>Convertir ideas en modelos y prototipos físicos/digitales.</p>
+        </article>
       </div>
-    </article>
-  </section>
+    </section>
 
-  <footer>
-    <a href="#titulo">Ir al inicio</a>
-    <p>Correo de contacto:</p>
-    <a href="mailto:stefavalencia185@gmail.com">stefavalencia185@gmail.com</a>
-    <p>Número de contacto:</p>
-    <a href="tel:3044490262">3044490262</a>
+    <div class="divider" role="separator" aria-hidden="true"></div>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="section" aria-labelledby="projects-heading">
+      <h2 id="projects-heading" class="section-title">Mis proyectos</h2>
+
+      <div class="projects-grid container" role="list" aria-live="polite">
+        <article class="project-card" role="listitem">
+          <h3>Proyecto 1</h3>
+          <p>Descripción breve.</p>
+        </article>
+        <article class="project-card" role="listitem">
+          <h3>Proyecto 2</h3>
+          <p>Descripción breve.</p>
+        </article>
+        <article class="project-card" role="listitem">
+          <h3>Proyecto 3</h3>
+          <p>Descripción breve.</p>
+        </article>
+      </div>
+    </section>
+
+    <div class="divider" role="separator" aria-hidden="true"></div>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section" aria-labelledby="contacto-heading">
+      <h2 id="contacto-heading" class="section-title">Contacto</h2>
+
+      <!-- Formulario: tiene id y name para que script.js lo use -->
+      <form id="contactForm" class="contact-form container" novalidate aria-describedby="contact-help">
+        <div id="contact-help" class="sr-only">Completa los campos para enviar un mensaje.</div>
+
+        <label for="name">Nombre</label>
+        <input id="name" name="name" type="text" placeholder="Tu nombre" required minlength="2">
+
+        <label for="email">Correo</label>
+        <input id="email" name="email" type="email" placeholder="tu@correo.com" required>
+
+        <label for="message">Mensaje</label>
+        <textarea id="message" name="message" rows="4" placeholder="Escribe tu mensaje" required></textarea>
+
+        <div class="form-actions">
+          <button type="submit" class="btn primary">Enviar mensaje</button>
+          <button type="reset" class="btn">Limpiar</button>
+        </div>
+      </form>
+
+      <!-- Lista donde mostramos los "envíos" (simulación) -->
+      <div id="submissions" class="submissions container" aria-live="polite"></div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>© 2025 Stefania Valencia</p>
+      <p><a href="mailto:stefavalencia185@gmail.com">stefavalencia185@gmail.com</a> • <a href="tel:3044490262">3044490262</a></p>
+    </div>
   </footer>
 
-  <a target="_blank" href="https://codepen.io">Ir al código</a>
+  <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
