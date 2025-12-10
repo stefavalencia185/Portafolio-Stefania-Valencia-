@@ -8,11 +8,17 @@
 </head>
 <body>
 
-  <!-- NAV -->
+
   <nav class="navbar" aria-label="Menú principal">
-    <div class="container">
+    <div class="container nav-inner">
       <a class="brand" href="#titulo">Stefania V.</a>
-      <ul class="nav-list" role="menubar" aria-label="Navegación principal">
+
+      <!-- botón hamburguesa  -->
+      <button class="menu-toggle" aria-controls="main-menu" aria-expanded="false" aria-label="Abrir menú">
+        <span class="hamburger-icon">☰</span>
+      </button>
+
+      <ul id="main-menu" class="nav-list" role="menubar" aria-label="Navegación principal">
         <li role="none"><a role="menuitem" href="#acerca">Acerca de mí</a></li>
         <li role="none"><a role="menuitem" href="#interes">Temas</a></li>
         <li role="none"><a role="menuitem" href="#proyectos">Proyectos</a></li>
@@ -21,17 +27,18 @@
     </div>
   </nav>
 
-  <!-- HEADER -->
+  
   <header class="site-header" role="banner">
     <h1 id="titulo">Stefania Valencia Valencia</h1>
     <p class="subtitulo">Estudiante ADSO — Diseño Industrial</p>
   </header>
 
   <main>
-    <!-- ACERCA DE MI -->
-    <section id="acerca" class="section" aria-labelledby="about-heading">
+     <section id="acerca" class="section" aria-labelledby="about-heading">
       <div class="about-box container" role="region" aria-labelledby="about-heading">
-        <img src="mifoto.jpeg" class="about-img" alt="Foto de Stefania" />
+        <figure class="about-figure">
+          <img src="mifoto.jpeg" class="about-img" alt="Foto de Stefania" />
+        </figure>
 
         <div class="about-text">
           <h2 id="about-heading">Acerca de mí</h2>
@@ -51,31 +58,31 @@
         <article class="card" role="listitem" aria-labelledby="t1">
           <h3 id="t1">Diseño sostenible</h3>
           <p>Creación de soluciones con bajo impacto ambiental.</p>
-          <img src="diseño_sostenible.jpeg" class="about-img" alt="Foto de sostenible" />
+          <img src="diseño_sostenible.jpeg" alt="Diseño sostenible" class="card-img" />
         </article>
 
         <article class="card" role="listitem" aria-labelledby="t2">
           <h3 id="t2">Inclusión</h3>
           <p>Diseñar productos y experiencias accesibles para todos.</p>
-          <img src="inclusion.jpeg" class="about-img" alt="Foto de inclusion" />
+          <img src="inclusion.jpeg" alt="Inclusión" class="card-img" />
         </article>
 
         <article class="card" role="listitem" aria-labelledby="t3">
           <h3 id="t3">Solución de problemas</h3>
           <p>Analizar necesidades reales y proponer soluciones funcionales.</p>
-          <img src="solucion_problemas.jpeg" class="about-img" alt="Foto de solución de problemas" />
+          <img src="solucion_problemas.jpeg" alt="Solución de problemas" class="card-img" />
         </article>
 
         <article class="card" role="listitem" aria-labelledby="t4">
           <h3 id="t4">Simulación y análisis</h3>
           <p>Evaluar diseños antes de fabricarlos.</p>
-          <img src="simulacion_analisis.jpeg" class="about-img" alt="Foto de inclusion" />
+          <img src="simulacion_analisis.jpeg" alt="Simulación y análisis" class="card-img" />
         </article>
 
         <article class="card" role="listitem" aria-labelledby="t5">
           <h3 id="t5">Modelado y prototipado</h3>
           <p>Convertir ideas en modelos y prototipos físicos/digitales.</p>
-          <img src="prototipado_modelado.jpeg" class="about-img" alt="Foto de modelado" />
+          <img src="prototipado_modelado.jpeg" alt="Modelado y prototipado" class="card-img" />
         </article>
       </div>
     </section>
@@ -108,7 +115,7 @@
     <section id="contacto" class="section" aria-labelledby="contacto-heading">
       <h2 id="contacto-heading" class="section-title">Contacto</h2>
 
-      <!-- Formulario: tiene id y name para que script.js lo use -->
+      <!-- Formulario -->
       <form id="contactForm" class="contact-form container" novalidate aria-describedby="contact-help">
         <div id="contact-help" class="sr-only">Completa los campos para enviar un mensaje.</div>
 
@@ -127,7 +134,7 @@
         </div>
       </form>
 
-      <!-- Lista donde mostramos los "envíos" (simulación) -->
+      <!--"envíos" (simulación) -->
       <div id="submissions" class="submissions container" aria-live="polite"></div>
     </section>
 
